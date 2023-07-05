@@ -1,0 +1,3 @@
+.. automodule:: imaging.bscan
+    :members:
+

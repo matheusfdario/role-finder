@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VersionContainer version="0">
+  <settingsProfile>
+    <profileName>Default</profileName>
+    <settingModels class="settingsModelGroup">
+      <group />
+    </settingModels>
+  </settingsProfile>
+</VersionContainer>

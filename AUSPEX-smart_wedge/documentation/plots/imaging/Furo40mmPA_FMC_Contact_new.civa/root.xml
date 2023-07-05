@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE CivaConfig PUBLIC "-//FR.CEA//DTD civaconfig.resources.dtd.CivaConfig//FR" "CivaConfig.dtd" >
+<CivaConfig comment="" relativePath="" type="Civa" version="0" loading="Local" lm="" uniqueId="0" absolutePath="" name="Furo40mmPA_FMC_Contact.civa">
+  <Config comment="" version="2" isLoaded="true" idProcedure="1" configname="Configuration" tabidSourceOUT="1;">
+    <Config tabidSourceIN="0@1;" comment="" version="2" isLoaded="true" idProcedure="2" configname="Sem envelope" tabidSourceOUT="2;"/>
+    <Config tabidSourceIN="0@1;" comment="" version="2" isLoaded="true" idProcedure="3" configname="Com envelope" tabidSourceOUT="3;"/>
+  </Config>
+  <Source comment="" type="IBST" isLoaded="true" id="1" repository="source0" keyForLayout="" sourcename="" uniqIdForConfig="-1"/>
+  <Source comment="" type="CartoUS" isLoaded="true" id="2" repository="source2" keyForLayout="" sourcename="Sem envelope" uniqIdForConfig="-1"/>
+  <Source comment="" type="CartoUS" isLoaded="true" id="3" repository="source3" keyForLayout="" sourcename="Com envelope" uniqIdForConfig="-1"/>
+  <Procedure id="1" repository="proc0" typeOperator="LoadXmlFile">
+    <ProcLoadXmlFile>
+      <FileModel filename="model.xml" typeModel="ChampSons"/>
+    </ProcLoadXmlFile>
+  </Procedure>
+  <Procedure id="2" repository="proc1" typeOperator="FTP">
+    <ProcFTP keyScan="BalElecTpsScanAllF">
+      <FileModel filename="ftp.xml" typeModel="Ftp"/>
+    </ProcFTP>
+  </Procedure>
+  <Procedure id="3" repository="proc2" typeOperator="FTP">
+    <ProcFTP keyScan="BalElecTpsScanAllF">
+      <FileModel filename="ftp.xml" typeModel="Ftp"/>
+    </ProcFTP>
+  </Procedure>
+</CivaConfig>

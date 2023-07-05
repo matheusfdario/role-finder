@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE ModeleLayout PUBLIC "-//fr.cea//DTD modelelayout.resources.dtd.ModeleLayout//FR" "ModeleLayout.dtd" >
+<ModeleLayout author="">
+  <Source id="S_1" type="CHAMP_2D"/>
+  <Source id="S_0" type="IBST_be0_trF_vsF_veT_msF"/>
+  <Source id="S_2" type="CHAMP_2D"/>
+  <PageDescriptor>
+    <PageLayout filenamelayout="user_0.layout" ctxtPage="IBST_be0_trF_vsF_veT_msF" isFooterPanelVisible="true" layoutKey="default" typePage="TYPE_ANALYSE" idWindow="ID_PAGE_ANALYSE2" proportions="0.824;">
+      <FrameDescriptor componentKey="BalElecTpsScanAllF" sourceKey="S_0" idWindowLinked="" idWindow="win_0" scaleY="1.0" shearY="0.0" scaleX="1.0" shearX="0.0" translateY="0.0" translateX="0.0"/>
+      <FrameDescriptor componentKey="BVoiesScan" sourceKey="S_0" idWindowLinked="" idWindow="win_1" scaleY="1.0" shearY="0.0" scaleX="1.0" shearX="0.0" translateY="0.0" translateX="0.0"/>
+      <FrameDescriptor componentKey="AVoiesScan" sourceKey="S_0" idWindowLinked="" idWindow="win_2" scaleY="1.0" shearY="0.0" scaleX="1.0" shearX="0.0" translateY="0.0" translateX="0.0"/>
+      <FrameDescriptor componentKey="View3D" sourceKey="S_0" idWindowLinked="" idWindow="win_3" scaleY="1.0" shearY="0.0" scaleX="1.0" shearX="0.0" translateY="0.0" translateX="0.0"/>
+    </PageLayout>
+  </PageDescriptor>
+  <PageDescriptor>
+    <PageLayout filenamelayout="user_1.layout" ctxtPage="CHAMP_2D" isFooterPanelVisible="true" layoutKey="CEA" typePage="TYPE_ANALYSE" idWindow="ID_PAGE_ANALYSE3" proportions="0.7762711864406779;">
+      <FrameDescriptor componentKey="XZSlice" sourceKey="S_1" idWindowLinked="" idWindow="win_4" scaleY="1.0" shearY="0.0" scaleX="1.0" shearX="0.0" translateY="0.0" translateX="0.0"/>
+      <FrameDescriptor componentKey="YfixXrepEchodyn" sourceKey="S_1" idWindowLinked="" idWindow="win_5" scaleY="1.0" shearY="0.0" scaleX="1.0" shearX="0.0" translateY="0.0" translateX="0.0"/>
+      <FrameDescriptor componentKey="YfixZrepEchodyn" sourceKey="S_1" idWindowLinked="" idWindow="win_6" scaleY="1.0" shearY="0.0" scaleX="1.0" shearX="0.0" translateY="0.0" translateX="0.0"/>
+    </PageLayout>
+  </PageDescriptor>
+  <PageDescriptor>
+    <PageLayout filenamelayout="user_2.layout" ctxtPage="CHAMP_2D" isFooterPanelVisible="true" layoutKey="CEA" typePage="TYPE_ANALYSE" idWindow="ID_PAGE_ANALYSE4" proportions="0.7762711864406779;">
+      <FrameDescriptor componentKey="XZSlice" sourceKey="S_2" idWindowLinked="" idWindow="win_7" scaleY="1.0" shearY="0.0" scaleX="1.0" shearX="0.0" translateY="0.0" translateX="0.0"/>
+      <FrameDescriptor componentKey="YfixXrepEchodyn" sourceKey="S_2" idWindowLinked="" idWindow="win_8" scaleY="1.0" shearY="0.0" scaleX="1.0" shearX="0.0" translateY="0.0" translateX="0.0"/>
+      <FrameDescriptor componentKey="YfixZrepEchodyn" sourceKey="S_2" idWindowLinked="" idWindow="win_9" scaleY="1.0" shearY="0.0" scaleX="1.0" shearX="0.0" translateY="0.0" translateX="0.0"/>
+    </PageLayout>
+  </PageDescriptor>
+</ModeleLayout>

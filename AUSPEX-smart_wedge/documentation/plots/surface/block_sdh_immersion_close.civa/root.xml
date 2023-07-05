@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE CivaConfig PUBLIC "-//FR.CEA//DTD civaconfig.resources.dtd.CivaConfig//FR" "CivaConfig.dtd" >
+<CivaConfig comment="" relativePath="" type="Civa" version="0" loading="Local" uniqueId="0" absolutePath="" name="block_sdh_immersion_close.civa">
+  <Config comment="" version="2" isLoaded="true" idProcedure="1" configname="Configuration" tabidSourceOUT="1;"/>
+  <Source comment="" type="IBST" isLoaded="true" id="1" repository="source1" keyForLayout="" sourcename="" uniqIdForConfig="-1"/>
+  <Procedure id="1" repository="proc0" typeOperator="LoadXmlFile">
+    <ProcLoadXmlFile>
+      <FileModel filename="model.xml" typeModel="ChampSons"/>
+    </ProcLoadXmlFile>
+  </Procedure>
+</CivaConfig>

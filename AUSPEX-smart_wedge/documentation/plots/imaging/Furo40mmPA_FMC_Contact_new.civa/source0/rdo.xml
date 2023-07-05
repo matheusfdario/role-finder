@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE RaysOptionsList PUBLIC "-//fr.cea//DTD raysoptionslist.resources.dtd.RaysOptionsList//FR" "RaysOptionsList.dtd" >
+<RaysOptionsList version="0">
+  <RaysOptions areCriticalRaysDisplayed="false" areOnlyRayGoingBackToTransDisplayed="false" areTransmissionRaysDisplayed="true" isSymmetryActive="false" raysDisplay="DelayLaws" areReceptionRaysDisplayed="true">
+    <NoLawsRaysOptions>
+      <CommonRaysOptions>
+        <ModesOptions waves="ComputationOptions" nbSkips="0" skips="Direct"/>
+        <FlightTime limitation="CutSegment" flightTime="0.0" timeSettings="Propagation" flightTimeReference="false"/>
+        <CoverageSettings scanningsSelection="false" raysSelection="true" shotsSelection="false" beamSelection="false" sequencesSelection="false"/>
+        <BeamCharacteristics beamSelectionDisplay="Coverage" displayBeam="false">
+          <RaysBeamSettings nbRaysY="1" nbRaysX="11" openingAngle="0.0" openingAngleSettable="false"/>
+          <BeamCoverageSettings threshold="-3.0" modesSelection="L" transmissionReceptionSelection="Transmission" computation="Beam" withFocalZone="false" withNearZone="false"/>
+        </BeamCharacteristics>
+      </CommonRaysOptions>
+    </NoLawsRaysOptions>
+    <PASettingsRaysOptions>
+      <CommonRaysOptions>
+        <ModesOptions waves="L" nbSkips="0" skips="Direct"/>
+        <FlightTime limitation="CutSegment" flightTime="0.0" timeSettings="Propagation" flightTimeReference="false"/>
+        <CoverageSettings scanningsSelection="false" raysSelection="true" shotsSelection="true" beamSelection="false" sequencesSelection="true"/>
+        <BeamCharacteristics beamSelectionDisplay="Coverage" displayBeam="false">
+          <RaysBeamSettings nbRaysY="1" nbRaysX="11" openingAngle="0.0" openingAngleSettable="false"/>
+          <BeamCoverageSettings threshold="-3.0" modesSelection="L" transmissionReceptionSelection="Transmission" computation="Beam" withFocalZone="false" withNearZone="false"/>
+        </BeamCharacteristics>
+      </CommonRaysOptions>
+    </PASettingsRaysOptions>
+    <DelayLawsRaysOptions>
+      <CommonRaysOptions>
+        <ModesOptions waves="ComputationOptions" nbSkips="0" skips="Direct"/>
+        <FlightTime limitation="CutSegment" flightTime="0.0" timeSettings="Propagation" flightTimeReference="false"/>
+        <CoverageSettings scanningsSelection="false" raysSelection="true" shotsSelection="true" beamSelection="false" sequencesSelection="true"/>
+        <BeamCharacteristics beamSelectionDisplay="Coverage" displayBeam="false">
+          <RaysBeamSettings nbRaysY="1" nbRaysX="11" openingAngle="0.0" openingAngleSettable="false"/>
+          <BeamCoverageSettings threshold="-3.0" modesSelection="L" transmissionReceptionSelection="Transmission" computation="Beam" withFocalZone="false" withNearZone="false"/>
+        </BeamCharacteristics>
+      </CommonRaysOptions>
+    </DelayLawsRaysOptions>
+    <Annotations displayPCS="false" displayAngle="false" displayWeld="false" displayLength="false"/>
+  </RaysOptions>
+</RaysOptionsList>

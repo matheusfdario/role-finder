@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<visuModelIbst_V12>
+    <recalage timeOffset="0.0"/>
+    <colorMapGain dynamique="0.0" gain="0.0" rampshape="SYMETRIC" min="0.0" max="0.07614529132843018" referenceKey="palletCIVA"/>
+    <trueScanOption mode="MODENOMODE" nombreDeRebonds="0" isAvecLissage="false"/>
+    <optionsTrajets Actif="false" FaiseauRayon="false" NbRayonsX="11" NbRayonsY="11" isWithOpeningAngle="false" openingAngle="0.0" isME="false" isArraySettingAvailable="false" isRepereTpsVol="false" typeTemps="Propagation" limitation="Segment" tpsvol="0.0" tpsmin="0.0" tpsmax="0.0" transmissionRays="false" receptionRays="false" raysBackToTrans="false" isSegmentsCritiquesVisible="false" isDone="false" rayonParam="central" selectionTir="false" selectionSequence="false"/>
+    <calibration isCalibrated="false" referenceAmplitude="0.07614529132843018" gainHardWare="NaN" gainSoftWare="NaN" referenceFile=""/>
+    <visuModelTofd>
+        <waveType tofdWaveType="NONE"/>
+    </visuModelTofd>
+    <cursorsContext areCursorsSpecimenAndIndexLinked="false" cursorsLinkingMode="SPECIMEN_TO_ACQUISITION">
+        <cursorState>ONE</cursorState>
+        <cursorData id="IntNumInc1" value="0.0"/>
+        <cursorData id="IntNumBalMec1" value="0.0"/>
+        <cursorData id="IntNumBalElec1" value="15.0"/>
+        <cursorData id="IntNumTir1" value="0.0"/>
+        <cursorData id="IntNumVoies1" value="15.0"/>
+        <cursorData id="IntNumEch1" value="2044.0"/>
+        <cursorData id="IntNumInc2" value="0.0"/>
+        <cursorData id="IntNumBalMec2" value="0.0"/>
+        <cursorData id="IntNumBalElec2" value="15.0"/>
+        <cursorData id="IntNumTir2" value="0.0"/>
+        <cursorData id="IntNumVoies2" value="15.0"/>
+        <cursorData id="IntNumEch2" value="2044.0"/>
+        <cursorData id="QtyIncMec1" value="0.0"/>
+        <cursorData id="QtyBalMec1" value="0.0"/>
+        <cursorData id="QtyNumIncMec1" value="0.0"/>
+        <cursorData id="QtyNumBalMec1" value="0.0"/>
+        <cursorData id="QtyNumBalElec1" value="15.0"/>
+        <cursorData id="QtyNumTir1" value="0.0"/>
+        <cursorData id="QtyNumVoie1" value="15.0"/>
+        <cursorData id="QtyNumEch1" value="0.0"/>
+        <cursorData id="QtyTps1" value="20.439999543130398"/>
+        <cursorData id="QtyAbsAmp1" value="0.0"/>
+        <cursorData id="QtyAmp1" value="0.0"/>
+        <cursorData id="QtyU1" value="0.0"/>
+        <cursorData id="QtyV1" value="0.0"/>
+        <cursorData id="QtyX1" value="0.0"/>
+        <cursorData id="QtyY1" value="0.0"/>
+        <cursorData id="QtyZ1" value="0.0"/>
+        <cursorData id="QtyR1" value="0.0"/>
+        <cursorData id="QtyTheta1" value="-5.497787143782138"/>
+        <cursorData id="QtyIncMec2" value="0.0"/>
+        <cursorData id="QtyBalMec2" value="0.0"/>
+        <cursorData id="QtyNumIncMec2" value="0.0"/>
+        <cursorData id="QtyNumBalMec2" value="0.0"/>
+        <cursorData id="QtyNumBalElec2" value="15.0"/>
+        <cursorData id="QtyNumTir2" value="0.0"/>
+        <cursorData id="QtyNumVoie2" value="15.0"/>
+        <cursorData id="QtyNumEch2" value="0.0"/>
+        <cursorData id="QtyTps2" value="10.219999771565199"/>
+        <cursorData id="QtyAbsAmp2" value="0.0"/>
+        <cursorData id="QtyAmp2" value="0.0"/>
+        <cursorData id="QtyU2" value="0.0"/>
+        <cursorData id="QtyV2" value="0.0"/>
+        <cursorData id="QtyX2" value="0.0"/>
+        <cursorData id="QtyY2" value="0.0"/>
+        <cursorData id="QtyZ2" value="0.0"/>
+        <cursorData id="QtyR2" value="1.0"/>
+        <cursorData id="QtyTheta2" value="-5.497787143782138"/>
+        <visuModelUnit>
+            <ampUnit>pts</ampUnit>
+            <tempsUnit>µs</tempsUnit>
+            <depthForAScanUnit>µs</depthForAScanUnit>
+        </visuModelUnit>
+        <dimInfo dim="IncMec" isFixed="false"/>
+        <dimInfo dim="BalMec" isFixed="false"/>
+        <dimInfo dim="BalElec" isFixed="false"/>
+        <dimInfo dim="Tir" isFixed="false"/>
+        <sectionCursorDatas axis="X" isVisible="false" thickness="1.0"/>
+        <sectionCursorDatas axis="Y" isVisible="false" thickness="1.0"/>
+        <sectionCursorDatas axis="Z" isVisible="false" thickness="1.0"/>
+        <sectionCursorDatas axis="R" isVisible="false" thickness="1.0"/>
+        <sectionCursorDatas axis="Theta" isVisible="false" thickness="0.1"/>
+    </cursorsContext>
+    <color red="35" green="205" blue="205"/>
+    <trueScanContext incMecNappePlan="RAYPATH" balMecNappePlan="RAYPATH" balElecNappePlan="RAYPATH" tirNappePlan="RAYPATH" balElecNappeCoordinateSystem="PROBE" tirNappeCoordinateSystem="PROBE"/>
+    <conversionContext>
+        <rThetaConversionContext>
+            <xOrigin>0.0</xOrigin>
+            <yOrigin>0.0</yOrigin>
+            <zOrigin>0.0</zOrigin>
+            <xDirectionRotation>0.0</xDirectionRotation>
+            <yDirectionRotation>1.0</yDirectionRotation>
+            <zDirectionRotation>0.0</zDirectionRotation>
+            <xDirectionR>0.0</xDirectionR>
+            <yDirectionR>0.0</yDirectionR>
+            <zDirectionR>-1.0</zDirectionR>
+            <isThetaReversed>true</isThetaReversed>
+            <isConversionEnabled>false</isConversionEnabled>
+            <conversionEnabled>false</conversionEnabled>
+        </rThetaConversionContext>
+    </conversionContext>
+    <specimenScanContext seuilAlgoProj="0.001206821538643972"/>
+    <depthOptionContext type="NONE" surfaceType="ENTRY" profilType="SOUS_CAPTEUR" depth="NaN" viewContextId=""/>
+    <scaleAmpContext scaleAmpValue="120.0"/>
+    <snrParamIO useSnr="false" commentSnr="" ampSnrRef="4.9E-324" uuid="4f5c9692-5d49-4997-9f36-03fc6a13d83e" roiFileName=""/>
+    <ibstRoiCalibrationModelIO lateralVisibility="false" backwallVisibility="false" lateralPeakType="MAX" lateraSign="POSITIVE" backwallPeakType="MAX" backwallSign="POSITIVE" uuid="e17b127c-7b12-4093-ae61-bb202a0624af"/>
+    <nameForPalette></nameForPalette>
+</visuModelIbst_V12>

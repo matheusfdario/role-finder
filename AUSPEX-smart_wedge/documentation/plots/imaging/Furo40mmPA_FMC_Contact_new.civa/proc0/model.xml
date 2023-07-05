@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE ChampSons PUBLIC "-//fr.cea//DTD champsons.resources.dtd.ChampSons//FR" "ChampSons.dtd" >
+<ChampSons civaenv="" choixApplication="App_Mephisto" magic="9151314450623836736" calculable="true" mode="Release" perspective="Defaut">
+  <Piece typeGeom="plane" typeStructure="homogene" version="V3" symetrieMiroir="false" infinite="false" angleZ="0.0" angleY="0.0" angleX="-0.0" origineZ="0.0" origineY="0.0" origineX="0.0" interieurExterieur="interieur" nom="Piece">
+    <Plane longueur="80.0" largeur="24.0" epaisseur="60.0"/>
+    <Volume isWithBruit="false" id="Couche" typeisoani="isotrope" epaisseur="100.0">
+      <Material comment="Comment" referenceFileName="File Name" state="Solid" typeMaterialEM="Simple" typeMaterialED="Simple" typeMaterialXR="Simple" name="Steel">
+        <SimpleMaterial density_gcm3="7.800000190734863">
+          <SimpleParamEM permeability="1.0" conductivity_MSm="1.0"/>
+          <SimpleParamED AttenuationMode="OndeL" attenuationRange="none" version="v1" SymetrieType="IsotropicED">
+            <Bruit listChoixBruit="WithoutBruit"/>
+            <AttenuationLawED AttenuationLawType="WithoutAttenuation"/>
+            <AttenuationLawED AttenuationLawType="WithoutAttenuation"/>
+            <AttenuationLawED AttenuationLawType="WithoutAttenuation"/>
+            <SimpleIsotropicED TWaveVelocity_ms="3230.0" LWaveVelocity_ms="5900.0"/>
+          </SimpleParamED>
+          <SimpleParamXR energieHighCutElectrons_keV="0.0" fileCoeffDiffuseCNDRI="pas de fichier" atomicNumber="0" energieHighCutPhotons_keV="0.0" masseAtomic="0.0" energieLowCutElectrons_keV="0.0" fileCoeffMonteCarloLETI="pas de fichier" energieLowCutPhotons_keV="0.0">
+            <EnergyParam energyRayAbsorption_keV="0.0"/>
+            <EnergyChannelCoefficient energyRayAbsorption_keV="0.0" coeffAttenuationTotal="0.0" coeffCompton="0.0" coeffAbsorptionEnergy="0.0" coeffPhotoElectrique="0.0" coeffPaire="0.0" coeffDifusionRayleigh="0.0"/>
+          </SimpleParamXR>
+        </SimpleMaterial>
+        <Vacuum/>
+      </Material>
+      <Orientation skew="0.0" theta="0.0" rotation="0.0"/>
+    </Volume>
+    <Maillage typeMaillage="AucunMaillage">
+      <AucunMaillage/>
+    </Maillage>
+    <Rugosite>
+      <RugositeGlobale ra_mm="0.0"/>
+    </Rugosite>
+    <ListOfDeformations/>
+  </Piece>
+  <ReseauTraducteur choixDependanceCapteur="identique">
+    <Traducteur withSabotContact="false" serialNumber="" withSignalVoie="false" modelNumber="" isInstrumented="false" typeTrad="contact" typeFlexible="resine" withBoitier="false" epaisseur="5.0" manufacturer="" typeEmetteurRecepteur="emetteurRecepteur">
+      <SabotContact angleIncidence="0.0" orientationCylindrique="parallele" angleDesorientation="0.0" angleToit="0.0" modelNumber="" largeur="20.0" longueurAvant="50.0" angleBigle="0.0" geometrie="plane" longueurArriere="30.0" vitesseRefOndeT="3230.0" vitesseRefOndeL="5900.0" rayonCylindrique="200.0" manufacturer="" profondeur="0.0" serialNumber="" hauteur="30.0" ecartPastille="0.0" typeOnde="ondeL" materiauReference="acieraustenitique" angleRotation="0.0" angleRefraction="0.0">
+        <Material comment="Comment" referenceFileName="File Name" state="Liquid" typeMaterialEM="Simple" typeMaterialED="Simple" typeMaterialXR="Simple" name="Plexiglas">
+          <SimpleMaterial density_gcm3="1.1799999475479126">
+            <SimpleParamEM permeability="1.0" conductivity_MSm="1.0"/>
+            <SimpleParamED AttenuationMode="OndeL" attenuationRange="none" version="v1" SymetrieType="IsotropicED">
+              <Bruit listChoixBruit="WithoutBruit"/>
+              <AttenuationLawED AttenuationLawType="WithoutAttenuation"/>
+              <AttenuationLawED AttenuationLawType="WithoutAttenuation"/>
+              <AttenuationLawED AttenuationLawType="WithoutAttenuation"/>
+              <SimpleIsotropicED TWaveVelocity_ms="1320.0" LWaveVelocity_ms="2680.0"/>
+            </SimpleParamED>
+            <SimpleParamXR energieHighCutElectrons_keV="0.0" fileCoeffDiffuseCNDRI="pas de fichier" atomicNumber="0" energieHighCutPhotons_keV="0.0" masseAtomic="0.0" energieLowCutElectrons_keV="0.0" fileCoeffMonteCarloLETI="pas de fichier" energieLowCutPhotons_keV="0.0"/>
+          </SimpleMaterial>
+          <Vacuum/>
+        </Material>
+      </SabotContact>
+      <DecoupagePastille decoupage="lineaire" typeSollicitation="sans">
+        <DecoupageMulti isSE="false" type="lineaire" decoupageSymetrique="true" isFermee="false" typeDecoupageMulti="lineaire">
+          <DecoupageLineaire spaceInterIncid="0.1" rayonCourbure="100.0" nbElements="32" widthIncid="0.7" id="0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;" widthOrtho="10.0" version="1">
+            <Voies liste="0;" id="1"/>
+            <Voies liste="1;" id="2"/>
+            <Voies liste="2;" id="3"/>
+            <Voies liste="3;" id="4"/>
+            <Voies liste="4;" id="5"/>
+            <Voies liste="5;" id="6"/>
+            <Voies liste="6;" id="7"/>
+            <Voies liste="7;" id="8"/>
+            <Voies liste="8;" id="9"/>
+            <Voies liste="9;" id="10"/>
+            <Voies liste="10;" id="11"/>
+            <Voies liste="11;" id="12"/>
+            <Voies liste="12;" id="13"/>
+            <Voies liste="13;" id="14"/>
+            <Voies liste="14;" id="15"/>
+            <Voies liste="15;" id="16"/>
+            <Voies liste="16;" id="17"/>
+            <Voies liste="17;" id="18"/>
+            <Voies liste="18;" id="19"/>
+            <Voies liste="19;" id="20"/>
+            <Voies liste="20;" id="21"/>
+            <Voies liste="21;" id="22"/>
+            <Voies liste="22;" id="23"/>
+            <Voies liste="23;" id="24"/>
+            <Voies liste="24;" id="25"/>
+            <Voies liste="25;" id="26"/>
+            <Voies liste="26;" id="27"/>
+            <Voies liste="27;" id="28"/>
+            <Voies liste="28;" id="29"/>
+            <Voies liste="29;" id="30"/>
+            <Voies liste="30;" id="31"/>
+            <Voies liste="31;" id="32"/>
+          </DecoupageLineaire>
+          <ParamNumerotation typeAlgoNumerotation="manuel" isSE="false" typeDecoupageMulti="linaire"/>
+          <ElementsMorts/>
+        </DecoupageMulti>
+        <FiltreApodisation avecApodisation="false" puissanceApodisation="100"/>
+      </DecoupagePastille>
+      <ModeleFocalisation rayon="200.0" typeFocalisation="pastille" typeSurfaceFocale="plane" inclinaison="0.0">
+        <SurfacePlane/>
+        <Material comment="Comment" referenceFileName="File Name" state="Liquid" typeMaterialEM="Simple" typeMaterialED="Simple" typeMaterialXR="Simple" name="Materiau Isotrope">
+          <SimpleMaterial density_gcm3="1.1799999475479126">
+            <SimpleParamEM permeability="1.0" conductivity_MSm="1.0"/>
+            <SimpleParamED AttenuationMode="OndeL" attenuationRange="none" version="v1" SymetrieType="IsotropicED">
+              <Bruit listChoixBruit="WithoutBruit"/>
+              <AttenuationLawED AttenuationLawType="WithoutAttenuation"/>
+              <AttenuationLawED AttenuationLawType="WithoutAttenuation"/>
+              <AttenuationLawED AttenuationLawType="WithoutAttenuation"/>
+              <SimpleIsotropicED TWaveVelocity_ms="1340.0" LWaveVelocity_ms="2680.0"/>
+            </SimpleParamED>
+            <SimpleParamXR energieHighCutElectrons_keV="0.0" fileCoeffDiffuseCNDRI="pas de fichier" atomicNumber="0" energieHighCutPhotons_keV="0.0" masseAtomic="0.0" energieLowCutElectrons_keV="0.0" fileCoeffMonteCarloLETI="pas de fichier" energieLowCutPhotons_keV="0.0">
+              <EnergyParam energyRayAbsorption_keV="0.0"/>
+              <EnergyChannelCoefficient energyRayAbsorption_keV="0.0" coeffAttenuationTotal="0.0" coeffCompton="0.0" coeffAbsorptionEnergy="0.0" coeffPhotoElectrique="0.0" coeffPaire="0.0" coeffDifusionRayleigh="0.0"/>
+            </SimpleParamXR>
+          </SimpleMaterial>
+          <Vacuum/>
+        </Material>
+      </ModeleFocalisation>
+      <Signal typeSignal="quelconque" name="">
+        <SignalQuelconque isReference="true" phase="0.0" fCentrale="5.0" retard="0.0" deltaT="0.01" domaine="1" duree="0.0" largeurBande="50.0" nbEchantPow2="0" valeur="-8.1846796E-5;-8.184755E-5;-8.184984E-5;-8.185365E-5;-8.1858976E-5;-8.186584E-5;-8.187422E-5;-8.1884136E-5;-8.189558E-5;-8.1908554E-5;-8.192307E-5;-8.193913E-5;-8.195673E-5;-8.197588E-5;-8.199658E-5;-8.2018836E-5;-8.204266E-5;-8.206805E-5;-8.209501E-5;-8.212355E-5;-8.215369E-5;-8.218541E-5;-8.2218736E-5;-8.2253675E-5;-8.229022E-5;-8.2328406E-5;-8.236822E-5;-8.240968E-5;-8.2452796E-5;-8.249757E-5;-8.254402E-5;-8.259217E-5;-8.2642E-5;-8.269355E-5;-8.274682E-5;-8.2801824E-5;-8.2858576E-5;-8.291709E-5;-8.297738E-5;-8.303946E-5;-8.310334E-5;-8.316905E-5;-8.323659E-5;-8.330598E-5;-8.337725E-5;-8.34504E-5;-8.352546E-5;-8.360244E-5;-8.368137E-5;-8.376226E-5;-8.384513E-5;-8.3930005E-5;-8.40169E-5;-8.410585E-5;-8.4196865E-5;-8.428997E-5;-8.438519E-5;-8.448255E-5;-8.4582076E-5;-8.468379E-5;-8.4787716E-5;-8.489389E-5;-8.500233E-5;-8.511307E-5;-8.522614E-5;-8.5341555E-5;-8.545936E-5;-8.557958E-5;-8.570225E-5;-8.58274E-5;-8.595507E-5;-8.608528E-5;-8.6218075E-5;-8.635348E-5;-8.649155E-5;-8.66323E-5;-8.677579E-5;-8.692204E-5;-8.70711E-5;-8.722301E-5;-8.7377804E-5;-8.753554E-5;-8.7696244E-5;-8.785997E-5;-8.802676E-5;-8.819667E-5;-8.8369736E-5;-8.8546E-5;-8.872554E-5;-8.8908375E-5;-8.9094574E-5;-8.9284185E-5;-8.947727E-5;-8.967387E-5;-8.9874055E-5;-9.0077876E-5;-9.028539E-5;-9.0496666E-5;-9.071176E-5;-9.093073E-5;-9.115364E-5;-9.138056E-5;-9.161157E-5;-9.184671E-5;-9.208608E-5;-9.232973E-5;-9.257773E-5;-9.283017E-5;-9.308711E-5;-9.3348644E-5;-9.3614835E-5;-9.388578E-5;-9.4161536E-5;-9.4442206E-5;-9.4727875E-5;-9.501862E-5;-9.5314535E-5;-9.56157E-5;-9.592222E-5;-9.623419E-5;-9.6551696E-5;-9.6874835E-5;-9.72037E-5;-9.753841E-5;-9.787905E-5;-9.822573E-5;-9.857856E-5;-9.8937635E-5;-9.930308E-5;-9.967499E-5;-1.0005348E-4;-1.0043868E-4;-1.0083069E-4;-1.01229634E-4;-1.0163563E-4;-1.02048805E-4;-1.0246927E-4;-1.0289715E-4;-1.0333259E-4;-1.0377569E-4;-1.042266E-4;-1.04685445E-4;-1.0515235E-4;-1.0562747E-4;-1.0611093E-4;-1.0660287E-4;-1.0710344E-4;-1.07612774E-4;-1.0813098E-4;-1.0865817E-4;-1.09194356E-4;-1.09739514E-4;-1.10293484E-4;-1.1085599E-4;-1.11426656E-4;-1.1200512E-4;-1.1259125E-4;-1.1318569E-4;-1.1379053E-4;-1.14410475E-4;-1.1505426E-4;-1.15736075E-4;-1.1647656E-4;-1.173023E-4;-1.1824222E-4;-1.19318815E-4;-1.20531586E-4;-1.2183024E-4;-1.2307666E-4;-1.2399734E-4;-1.2413377E-4;-1.228068E-4;-1.19121876E-4;-1.1205589E-4;-1.0067733E-4;-8.455688E-5;-6.441574E-5;-4.3024706E-5;-2.629652E-5;-2.440012E-5;-5.2564963E-5;-1.3105077E-4;-2.8356432E-4;-5.332717E-4;-8.9556875E-4;-0.0013670521;-0.0019107908;-0.0024391394;-0.0027969785;-0.0027503085;-0.0019872822;-1.4048371E-4;0.0031601875;0.008196281;0.015028184;0.023326734;0.032187354;0.03996101;0.04415346;0.041458916;0.02800126;-1.5096234E-4;-0.046156034;-0.11126819;-0.19349074;-0.2861945;-0.37698433;-0.44718495;-0.47236428;-0.42428958;-0.27458993;-1.6209272E-4;0.40999147;0.9472376;1.5762998;2.2303483;2.8099973;3.187932;3.2204406;2.766229;1.7116369;-1.7315579E-4;-2.340042;-5.1689434;-8.225373;-11.129692;-13.409661;-14.548785;-14.055368;-11.545942;-6.832563;-1.8310873E-4;8.5411625;18.043749;27.459757;35.533367;40.943184;42.481533;39.248623;30.833221;17.449196;-1.9072363E-4;-19.950644;-40.305916;-58.660492;-72.59281;-79.99219;-79.37344;-70.13082;-52.68822;-28.515608;-1.9487277E-4;29.817257;57.609245;80.18244;94.89356;100.0;94.89356;80.18244;57.609245;29.817257;-1.9487277E-4;-28.515608;-52.68822;-70.13082;-79.37344;-79.99219;-72.59281;-58.660492;-40.305916;-19.950644;-1.9072363E-4;17.449196;30.833221;39.248623;42.481533;40.943184;35.533367;27.459757;18.043749;8.5411625;-1.8310873E-4;-6.832563;-11.545942;-14.055368;-14.548785;-13.409661;-11.129692;-8.225373;-5.1689434;-2.340042;-1.7315579E-4;1.7116369;2.766229;3.2204406;3.187932;2.8099973;2.2303483;1.5762998;0.9472376;0.40999147;-1.6209272E-4;-0.27458993;-0.42428958;-0.47236428;-0.44718495;-0.37698433;-0.2861945;-0.19349074;-0.11126819;-0.046156034;-1.5096234E-4;0.02800126;0.041458916;0.04415346;0.03996101;0.032187354;0.023326734;0.015028184;0.008196281;0.0031601875;-1.4048371E-4;-0.0019872822;-0.0027503085;-0.0027969785;-0.0024391394;-0.0019107908;-0.0013670521;-8.9556875E-4;-5.332717E-4;-2.8356432E-4;-1.3105077E-4;-5.2564963E-5;-2.440012E-5;-2.629652E-5;-4.3024706E-5;-6.441574E-5;-8.455688E-5;-1.0067733E-4;-1.1205589E-4;-1.19121876E-4;-1.228068E-4;-1.2413377E-4;-1.2399734E-4;-1.2307666E-4;-1.2183024E-4;-1.20531586E-4;-1.19318815E-4;-1.1824222E-4;-1.173023E-4;-1.1647656E-4;-1.15736075E-4;-1.1505426E-4;-1.14410475E-4;-1.1379053E-4;-1.1318569E-4;-1.1259125E-4;-1.1200512E-4;-1.11426656E-4;-1.1085599E-4;-1.10293484E-4;-1.09739514E-4;-1.09194356E-4;-1.0865817E-4;-1.0813098E-4;-1.07612774E-4;-1.0710344E-4;-1.0660287E-4;-1.0611093E-4;-1.0562747E-4;-1.0515235E-4;-1.04685445E-4;-1.042266E-4;-1.0377569E-4;-1.0333259E-4;-1.0289715E-4;-1.0246927E-4;-1.02048805E-4;-1.0163563E-4;-1.01229634E-4;-1.0083069E-4;-1.0043868E-4;-1.0005348E-4;-9.967499E-5;-9.930308E-5;-9.8937635E-5;-9.857856E-5;-9.822573E-5;-9.787905E-5;-9.753841E-5;-9.72037E-5;-9.6874835E-5;-9.6551696E-5;-9.623419E-5;-9.592222E-5;-9.56157E-5;-9.5314535E-5;-9.501862E-5;-9.4727875E-5;-9.4442206E-5;-9.4161536E-5;-9.388578E-5;-9.3614835E-5;-9.3348644E-5;-9.308711E-5;-9.283017E-5;-9.257773E-5;-9.232973E-5;-9.208608E-5;-9.184671E-5;-9.161157E-5;-9.138056E-5;-9.115364E-5;-9.093073E-5;-9.071176E-5;-9.0496666E-5;-9.028539E-5;-9.0077876E-5;-8.9874055E-5;-8.967387E-5;-8.947727E-5;-8.9284185E-5;-8.9094574E-5;-8.8908375E-5;-8.872554E-5;-8.8546E-5;-8.8369736E-5;-8.819667E-5;-8.802676E-5;-8.785997E-5;-8.7696244E-5;-8.753554E-5;-8.7377804E-5;-8.722301E-5;-8.70711E-5;-8.692204E-5;-8.677579E-5;-8.66323E-5;-8.649155E-5;-8.635348E-5;-8.6218075E-5;-8.608528E-5;-8.595507E-5;-8.58274E-5;-8.570225E-5;-8.557958E-5;-8.545936E-5;-8.5341555E-5;-8.522614E-5;-8.511307E-5;-8.500233E-5;-8.489389E-5;-8.4787716E-5;-8.468379E-5;-8.4582076E-5;-8.448255E-5;-8.438519E-5;-8.428997E-5;-8.4196865E-5;-8.410585E-5;-8.40169E-5;-8.3930005E-5;-8.384513E-5;-8.376226E-5;-8.368137E-5;-8.360244E-5;-8.352546E-5;-8.34504E-5;-8.337725E-5;-8.330598E-5;-8.323659E-5;-8.316905E-5;-8.310334E-5;-8.303946E-5;-8.297738E-5;-8.291709E-5;-8.2858576E-5;-8.2801824E-5;-8.274682E-5;-8.269355E-5;-8.2642E-5;-8.259217E-5;-8.254402E-5;-8.249757E-5;-8.2452796E-5;-8.240968E-5;-8.236822E-5;-8.2328406E-5;-8.229022E-5;-8.2253675E-5;-8.2218736E-5;-8.218541E-5;-8.215369E-5;-8.212355E-5;-8.209501E-5;-8.206805E-5;-8.204266E-5;-8.2018836E-5;-8.199658E-5;-8.197588E-5;-8.195673E-5;-8.193913E-5;-8.192307E-5;-8.1908554E-5;-8.189558E-5;-8.1884136E-5;-8.187422E-5;-8.186584E-5;-8.1858976E-5;-8.185365E-5;-8.184984E-5;-8.184755E-5;" gain="100.0" nbEchant="512" freqEchant="100.0" bruit="0.0" type="1"/>
+        <SignalReference sourceSignal="Genere" freqEchantillonage="100.0" author="Author" nbEchantillonsTot="512" name="Name" retard="0.0" freqEchantillonageAuto="false" echantillons="-8.184679383290816E-5;-8.184755516983501E-5;-8.184983935408826E-5;-8.185364693210686E-5;-8.185897877775947E-5;-8.186583612771465E-5;-8.187422055854687E-5;-8.188413400650356E-5;-8.189557879761146E-5;-8.19085575426345E-5;-8.192307328601835E-5;-8.193912938879631E-5;-8.195672955461022E-5;-8.197587789042595E-5;-8.199657885449154E-5;-8.201883724767486E-5;-8.204265826328066E-5;-8.20680474459635E-5;-8.209501072630956E-5;-8.212355440354579E-5;-8.215368513902334E-5;-8.218541000392262E-5;-8.221873642287459E-5;-8.225367222600266E-5;-8.22902256201912E-5;-8.232840520458705E-5;-8.236821999012846E-5;-8.24096793615714E-5;-8.245279313443679E-5;-8.249757151325544E-5;-8.254402513081883E-5;-8.25921650178214E-5;-8.264200264406036E-5;-8.269354990000417E-5;-8.27468191039754E-5;-8.280182301367693E-5;-8.28585748393054E-5;-8.291708822342288E-5;-8.297737726704837E-5;-8.303945654310728E-5;-8.310334107867106E-5;-8.316904637271113E-5;-8.323658841534341E-5;-8.330598367224296E-5;-8.337724911100363E-5;-8.345040219030104E-5;-8.352546088353386E-5;-8.360244368597166E-5;-8.368136960552335E-5;-8.376225819342466E-5;-8.384512953635583E-5;-8.393000427102742E-5;-8.40169035916174E-5;-8.410584926773668E-5;-8.41968636475462E-5;-8.42899696410749E-5;-8.43851907933851E-5;-8.4482551231712E-5;-8.458207570869338E-5;-8.468378961096424E-5;-8.478771894954901E-5;-8.489389040685086E-5;-8.500233130718641E-5;-8.511306967135607E-5;-8.522613419341879E-5;-8.534155425838617E-5;-8.545935998953598E-5;-8.557958221665044E-5;-8.57022525105673E-5;-8.582740318930526E-5;-8.595506735230377E-5;-8.608527886409534E-5;-8.621807239669355E-5;-8.635348342168633E-5;-8.649154824287438E-5;-8.663230400114885E-5;-8.677578869011159E-5;-8.692204119107039E-5;-8.70711012599134E-5;-8.722300956640175E-5;-8.737780769444784E-5;-8.753553817977166E-5;-8.769624450721281E-5;-8.785997114936363E-5;-8.802676356137022E-5;-8.819666822060878E-5;-8.836973263164932E-5;-8.854600535916907E-5;-8.872553602742762E-5;-8.890837536071087E-5;-8.909457519015786E-5;-8.928418848357755E-5;-8.947726936139933E-5;-8.967387310953005E-5;-8.987405621199651E-5;-9.007787638086581E-5;-9.02853925446121E-5;-9.049666490849577E-5;-9.071175494715239E-5;-9.093072544774819E-5;-9.115364051265229E-5;-9.138056560433516E-5;-9.16115675394781E-5;-9.184671454113615E-5;-9.208607623236218E-5;-9.232972368424266E-5;-9.257772941844426E-5;-9.283016743443583E-5;-9.308711324958919E-5;-9.334864387746033E-5;-9.361483790448445E-5;-9.388577545677434E-5;-9.416153826118001E-5;-9.444220963893681E-5;-9.472787454037985E-5;-9.501861955156496E-5;-9.531453292827592E-5;-9.561570458985433E-5;-9.592222615213042E-5;-9.623419093961923E-5;-9.655169399735892E-5;-9.68748320845155E-5;-9.72037037138368E-5;-9.753840915035536E-5;-9.787905041285219E-5;-9.822573127161996E-5;-9.857855728100998E-5;-9.893763572992677E-5;-9.930307569332367E-5;-9.967498796966519E-5;-1.0005348513007007E-4;-1.0043868147545285E-4;-1.0083069299205353E-4;-1.0122963738014725E-4;-1.0163563399898635E-4;-1.0204880383405181E-4;-1.024692695009902E-4;-1.0289715520699536E-4;-1.0333258682346571E-4;-1.0377569188593329E-4;-1.0422659982876801E-4;-1.0468544214906427E-4;-1.0515235275465502E-4;-1.0562746818621568E-4;-1.0611092763139288E-4;-1.0660287213686307E-4;-1.0710344230320038E-4;-1.0761277321819761E-4;-1.081309850302443E-4;-1.0865816764843761E-4;-1.0919435847785459E-4;-1.0973951432393857E-4;-1.1029348309605503E-4;-1.1085598886219686E-4;-1.1142665617233843E-4;-1.1200511619044984E-4;-1.1259125626850866E-4;-1.1318568990445515E-4;-1.1379052475878961E-4;-1.1441047344838383E-4;-1.1505425818439528E-4;-1.1573607392532453E-4;-1.1647656275524146E-4;-1.17302299485346E-4;-1.1824221796725389E-4;-1.1931881679565308E-4;-1.2053158442946034E-4;-1.2183024265967393E-4;-1.2307666179325183E-4;-1.2399732988354026E-4;-1.2413377032109008E-4;-1.2280679660284273E-4;-1.191218734998662E-4;-1.1205588888790096E-4;-1.0067733188907091E-4;-8.455687838436472E-5;-6.441574430144249E-5;-4.302470524013545E-5;-2.6296520659580212E-5;-2.4400119494069774E-5;-5.256496139325104E-5;-1.3105076231606817E-4;-2.8356433808948505E-4;-5.332716804051143E-4;-8.955687589881445E-4;-0.0013670521375957437;-0.0019107907438496692;-0.0024391393867310355;-0.002796978413703539;-0.002750308553607954;-0.0019872821865421363;-1.40483713856679E-4;0.0031601875945455487;0.008196281230574911;0.01502818436322542;0.02332673453491384;0.032187355089268385;0.039961011581361776;0.04415346007130036;0.04145891706269689;0.02800125912979862;-1.50962340455147E-4;-0.04615603533070272;-0.11126819372791674;-0.19349075093591492;-0.28619450556332404;-0.37698433131039394;-0.44718494284424914;-0.47236427573106904;-0.42428958827024293;-0.27458991672944916;-1.6209272063325052E-4;0.4099914783358688;0.9472375837783615;1.5762997408952546;2.2303484339862796;2.8099973031635503;3.187932068004525;3.2204405250512607;2.766228973487548;1.7116368953849659;-1.7315578071679154E-4;-2.3400421190245027;-5.168943412489685;-8.225373429299784;-11.129691682473084;-13.409660905956613;-14.54878561056263;-14.05536863297193;-11.545942778323335;-6.8325627519128895;-1.8310873266310932E-4;8.54116293370408;18.043748364738402;27.45975607304819;35.53336758224285;40.94318321561602;42.481532682889934;39.248623149935895;30.833221098911952;17.44919663116526;-1.907236293041789E-4;-19.95064409605618;-40.305917353429074;-58.66049249643202;-72.59280995949767;-79.9921894125367;-79.37344668323462;-70.13082271781624;-52.68821942145563;-28.515607214982147;-1.948727715894693E-4;29.817256498242852;57.609243726565396;80.1824390348405;94.89355934940399;100.0;94.89355934940399;80.18243903484051;57.60924372656539;29.81725649824287;-1.9487277159894697E-4;-28.515607214982136;-52.68821942145565;-70.13082271781623;-79.37344668323465;-79.9921894125367;-72.59280995949766;-58.66049249643202;-40.30591735342907;-19.950644096056187;-1.9072362930347002E-4;17.44919663116526;30.833221098911963;39.248623149935895;42.481532682889934;40.94318321561602;35.53336758224285;27.459756073048197;18.043748364738406;8.541162933704085;-1.831087326604405E-4;-6.832562751912876;-11.54594277832333;-14.055368632971922;-14.54878561056263;-13.409660905956617;-11.129691682473078;-8.225373429299784;-5.1689434124896865;-2.3400421190245053;-1.7315578071916917E-4;1.7116368953849626;2.766228973487548;3.220440525051261;3.187932068004523;2.809997303163554;2.2303484339862836;1.5762997408952617;0.9472375837783591;0.4099914783358722;-1.62092720630708E-4;-0.2745899167294502;-0.4242895882702409;-0.47236427573106904;-0.44718494284425664;-0.3769843313103986;-0.28619450556332043;-0.19349075093591867;-0.11126819372792125;-0.046156035330703504;-1.509623404571131E-4;0.028001259129804074;0.04145891706269656;0.04415346007130318;0.039961011581361415;0.032187355089268746;0.023326734534916762;0.015028184363228015;0.008196281230574365;0.003160187594545548;-1.4048371385290352E-4;-0.0019872821865426463;-0.002750308553607591;-0.002796978413703568;-0.002439139386731062;-0.0019107907438474282;-0.0013670521375963407;-8.955687589874211E-4;-5.332716804041552E-4;-2.835643380902717E-4;-1.3105076231262808E-4;-5.2564961392714475E-5;-2.4400119495663114E-5;-2.6296520660418178E-5;-4.3024705240345784E-5;-6.441574430143125E-5;-8.455687838495204E-5;-1.0067733189223032E-4;-1.1205588888951227E-4;-1.1912187349917463E-4;-1.2280679659860356E-4;-1.2413377031573005E-4;-1.2399732987828155E-4;-1.2307666179285764E-4;-1.2183024265872072E-4;-1.2053158442831052E-4;-1.193188167966129E-4;-1.1824221796746085E-4;-1.1730229948946016E-4;-1.1647656275684328E-4;-1.1573607392869938E-4;-1.1505425818439444E-4;-1.1441047344820967E-4;-1.1379052476111678E-4;-1.1318568990415477E-4;-1.1259125626857204E-4;-1.1200511618903221E-4;-1.1142665616973999E-4;-1.108559888585823E-4;-1.102934830933752E-4;-1.0973951432500007E-4;-1.0919435848076744E-4;-1.0865816764816082E-4;-1.0813098502800988E-4;-1.076127732149098E-4;-1.0710344230766938E-4;-1.0660287214051137E-4;-1.0611092763180839E-4;-1.0562746818828184E-4;-1.0515235275646869E-4;-1.046854421511188E-4;-1.0422659983144607E-4;-1.0377569188543557E-4;-1.0333258682022325E-4;-1.0289715520729118E-4;-1.0246926950149337E-4;-1.0204880383494698E-4;-1.016356339949257E-4;-1.0122963738000497E-4;-1.0083069299233745E-4;-1.0043868147626399E-4;-1.0005348513829725E-4;-9.967498797469862E-5;-9.930307569332367E-5;-9.893763573496019E-5;-9.857855728056354E-5;-9.822573127676792E-5;-9.78790504153045E-5;-9.753840914946225E-5;-9.720370371411297E-5;-9.687483207673704E-5;-9.655169398918844E-5;-9.623419093124141E-5;-9.592222614888797E-5;-9.561570458068298E-5;-9.531453292228035E-5;-9.501861954928268E-5;-9.47278745356883E-5;-9.444220963985588E-5;-9.416153826267973E-5;-9.388577546259105E-5;-9.361483790895345E-5;-9.334864388718297E-5;-9.308711325602841E-5;-9.283016743849585E-5;-9.25777294191887E-5;-9.232972368638838E-5;-9.208607623347705E-5;-9.18467145379853E-5;-9.161156753959018E-5;-9.138056559966492E-5;-9.115364051054727E-5;-9.093072544311099E-5;-9.071175494622696E-5;-9.04966649061532E-5;-9.028539254406914E-5;-9.007787638153016E-5;-8.987405621197203E-5;-8.96738731096709E-5;-8.947726936065761E-5;-8.928418848453737E-5;-8.909457519009225E-5;-8.8908375361655E-5;-8.87255360278466E-5;-8.854600535973797E-5;-8.83697326332011E-5;-8.819666822043537E-5;-8.80267635594589E-5;-8.785997114879677E-5;-8.769624450942354E-5;-8.753553818025733E-5;-8.737780769440272E-5;-8.72230095675269E-5;-8.707110126088689E-5;-8.692204119403593E-5;-8.677578869071005E-5;-8.663230399608245E-5;-8.649154824208135E-5;-8.635348341819022E-5;-8.621807239460646E-5;-8.608527886389178E-5;-8.595506734982555E-5;-8.58274031897534E-5;-8.570225250903099E-5;-8.557958222007775E-5;-8.545935999215438E-5;-8.53415542605447E-5;-8.522613419341932E-5;-8.511306966916066E-5;-8.500233130669937E-5;-8.48938904033886E-5;-8.478771894979042E-5;-8.468378961068894E-5;-8.458207570998087E-5;-8.44825512312419E-5;-8.438519079524011E-5;-8.428996964050406E-5;-8.419686364675421E-5;-8.41058492706166E-5;-8.401690359214256E-5;-8.393000426882513E-5;-8.384512953469564E-5;-8.376225819139178E-5;-8.368136960552335E-5;-8.36024436860733E-5;-8.35254608836355E-5;-8.34504021899172E-5;-8.337724911073258E-5;-8.330598367657978E-5;-8.323658841737631E-5;-8.316904637542165E-5;-8.310334107840001E-5;-8.303945654310728E-5;-8.297737726867468E-5;-8.291708822315183E-5;-8.285857483916987E-5;-8.280182301424963E-5;-8.274681910533067E-5;-8.269354989566735E-5;-8.264200264351826E-5;-8.25921650178214E-5;-8.254402512756621E-5;-8.249757151325544E-5;-8.245279313226839E-5;-8.240967935831879E-5;-8.236821998796005E-5;-8.232840520753193E-5;-8.22902256207333E-5;-8.225367222708686E-5;-8.221873642721141E-5;-8.218541000825944E-5;-8.215368514336016E-5;-8.21235544078826E-5;-8.209501073064637E-5;-8.20680474481319E-5;-8.204265826436486E-5;-8.201883725056227E-5;-8.199657885449154E-5;-8.197587789476277E-5;-8.195672955461022E-5;-8.193912938012267E-5;-8.192307328601835E-5;-8.19085575426345E-5;-8.189557879327463E-5;-8.188413401084037E-5;-8.187422055854687E-5;-8.186583612671328E-5;-8.18589787820963E-5;-8.185364694078049E-5;-8.184983935408826E-5;-8.184755516116138E-5;" choixSignal="Gaussien" typeSignal="Frequentiel" gain="100.0" comment="Comment" bruit="0.0">
+          <Frequentiel comment="Comment" author="Author" phase="0.0" amplitudeLargeurBande="-6" frequenceCentrale="5.0" largeurBande="50.0" name="Name"/>
+        </SignalReference>
+      </Signal>
+    </Traducteur>
+    <ComponentHeader comment="" author="" originFile=""/>
+  </ReseauTraducteur>
+  <ModeleControle positionnementPiece="positionnementPiece" typeSystemeControle="monoCapteur" referenceFrame="controle" fileName="" choixTrajectoire="piece" version="2">
+    <Configuration typeConfiguration="piecePlane" nom="Configuration" typeSensOrientation="positif" isTraducteurAdapte="true">
+      <ConfigurationsPiecePlane typePlanControle="suivantX" angle="0.0"/>
+    </Configuration>
+    <Positionnement nom="Positionnement" nombrePointImpact="1" typeCnt="contact" choixPointImpact="0">
+      <PosContact referencePoint="Default" algoAtterrissage="auto" ode="false" orientation="0.0" version="1">
+        <PointCoord typeCoord="plan">
+          <CoordPlanes z="-5.000000237487257E-4" y="12.0" x="40.0"/>
+        </PointCoord>
+        <PointCoord typeCoord="plan">
+          <CoordPlanes z="0.0" y="12.0" x="40.0"/>
+        </PointCoord>
+      </PosContact>
+      <PosControle>
+        <PointCoord typeCoord="plan">
+          <CoordPlanes z="0.0" y="0.0" x="0.0"/>
+        </PointCoord>
+      </PosControle>
+      <PosPlatine>
+        <PointCoord typeCoord="plan">
+          <CoordPlanes z="0.0" y="0.0" x="0.0"/>
+        </PointCoord>
+      </PosPlatine>
+    </Positionnement>
+    <MilieuEnvironnant id="environnant">
+      <Material comment="Comment" referenceFileName="File Name" state="Liquid" typeMaterialEM="Simple" typeMaterialED="FluidED" typeMaterialXR="Simple" name="Materiau Isotrope">
+        <SimpleMaterial density_gcm3="1.0">
+          <SimpleParamEM permeability="1.0" conductivity_MSm="1.0"/>
+          <SimpleParamED AttenuationMode="OndeL" attenuationRange="modal" version="v1" SymetrieType="FluidED">
+            <Bruit listChoixBruit="WithoutBruit"/>
+            <AttenuationLawED AttenuationLawType="WithoutAttenuation"/>
+            <AttenuationLawED AttenuationLawType="WithoutAttenuation"/>
+            <AttenuationLawED AttenuationLawType="PowerAttenuationLawED">
+              <PowerAttenuationLawED WaveAttenuation_dBmm="0.0" WaveAttenuationFilterPower="2.0" WaveFrequency_Mhz="1.0"/>
+            </AttenuationLawED>
+            <FluidED typeHomogeneite="Homogeneous" PWaveVelocity_ms="1483.0">
+              <HomogeneousFluidED/>
+            </FluidED>
+          </SimpleParamED>
+          <SimpleParamXR energieHighCutElectrons_keV="0.0" fileCoeffDiffuseCNDRI="pas de fichier" atomicNumber="0" energieHighCutPhotons_keV="0.0" masseAtomic="0.0" energieLowCutElectrons_keV="0.0" fileCoeffMonteCarloLETI="pas de fichier" energieLowCutPhotons_keV="0.0">
+            <EnergyParam energyRayAbsorption_keV="0.0"/>
+            <EnergyChannelCoefficient energyRayAbsorption_keV="0.0" coeffAttenuationTotal="0.0" coeffCompton="0.0" coeffAbsorptionEnergy="0.0" coeffPhotoElectrique="0.0" coeffPaire="0.0" coeffDifusionRayleigh="0.0"/>
+            <SectionScatter S="0.0" x="0.0"/>
+            <SectionRayleigh Z="0.0" x="0.0" F="0.0"/>
+          </SimpleParamXR>
+        </SimpleMaterial>
+        <Vacuum/>
+      </Material>
+    </MilieuEnvironnant>
+    <MilieuCouplant id="couplant">
+      <Material comment="Comment" referenceFileName="File Name" state="Liquid" typeMaterialEM="Simple" typeMaterialED="FluidED" typeMaterialXR="Simple" name="Materiau Isotrope">
+        <SimpleMaterial density_gcm3="1.0">
+          <SimpleParamEM permeability="1.0" conductivity_MSm="1.0"/>
+          <SimpleParamED AttenuationMode="OndeL" attenuationRange="none" version="v1" SymetrieType="FluidED">
+            <Bruit listChoixBruit="WithoutBruit"/>
+            <AttenuationLawED AttenuationLawType="WithoutAttenuation"/>
+            <AttenuationLawED AttenuationLawType="WithoutAttenuation"/>
+            <AttenuationLawED AttenuationLawType="WithoutAttenuation"/>
+            <FluidED typeHomogeneite="Homogeneous" PWaveVelocity_ms="1483.0">
+              <HomogeneousFluidED/>
+            </FluidED>
+          </SimpleParamED>
+          <SimpleParamXR energieHighCutElectrons_keV="0.0" fileCoeffDiffuseCNDRI="pas de fichier" atomicNumber="0" energieHighCutPhotons_keV="0.0" masseAtomic="0.0" energieLowCutElectrons_keV="0.0" fileCoeffMonteCarloLETI="pas de fichier" energieLowCutPhotons_keV="0.0">
+            <EnergyParam energyRayAbsorption_keV="0.0"/>
+            <EnergyChannelCoefficient energyRayAbsorption_keV="0.0" coeffAttenuationTotal="0.0" coeffCompton="0.0" coeffAbsorptionEnergy="0.0" coeffPhotoElectrique="0.0" coeffPaire="0.0" coeffDifusionRayleigh="0.0"/>
+            <SectionScatter S="0.0" x="0.0"/>
+            <SectionRayleigh Z="0.0" x="0.0" F="0.0"/>
+          </SimpleParamXR>
+        </SimpleMaterial>
+        <Vacuum/>
+      </Material>
+    </MilieuCouplant>
+    <MilieuFond id="Fond">
+      <Material comment="Comment" referenceFileName="File Name" state="Liquid" typeMaterialEM="Simple" typeMaterialED="FluidED" typeMaterialXR="Simple" name="Materiau Isotrope">
+        <SimpleMaterial density_gcm3="1.0">
+          <SimpleParamEM permeability="1.0" conductivity_MSm="1.0"/>
+          <SimpleParamED AttenuationMode="OndeL" attenuationRange="none" version="v1" SymetrieType="FluidED">
+            <Bruit listChoixBruit="WithoutBruit"/>
+            <AttenuationLawED AttenuationLawType="WithoutAttenuation"/>
+            <AttenuationLawED AttenuationLawType="WithoutAttenuation"/>
+            <AttenuationLawED AttenuationLawType="WithoutAttenuation"/>
+            <FluidED typeHomogeneite="Homogeneous" PWaveVelocity_ms="1483.0">
+              <HomogeneousFluidED/>
+            </FluidED>
+          </SimpleParamED>
+          <SimpleParamXR energieHighCutElectrons_keV="0.0" fileCoeffDiffuseCNDRI="pas de fichier" atomicNumber="0" energieHighCutPhotons_keV="0.0" masseAtomic="0.0" energieLowCutElectrons_keV="0.0" fileCoeffMonteCarloLETI="pas de fichier" energieLowCutPhotons_keV="0.0">
+            <EnergyParam energyRayAbsorption_keV="0.0"/>
+            <EnergyChannelCoefficient energyRayAbsorption_keV="0.0" coeffAttenuationTotal="0.0" coeffCompton="0.0" coeffAbsorptionEnergy="0.0" coeffPhotoElectrique="0.0" coeffPaire="0.0" coeffDifusionRayleigh="0.0"/>
+            <SectionScatter S="0.0" x="0.0"/>
+            <SectionRayleigh Z="0.0" x="0.0" F="0.0"/>
+          </SimpleParamXR>
+        </SimpleMaterial>
+        <Vacuum/>
+      </Material>
+    </MilieuFond>
+    <Deplacement choixTypeDeplacement="DeplacementSuivantConfiguration" indDeplacementDejaCalcule="1" typeCoord="plan">
+      <DeplacementSuivConfiguration typeDeplaceSuivConfig="piecePlane">
+        <DepConfPlane typePlanControle="suivantX" typeTraducteur="contact">
+          <DeplacementConfigurationBase typePlanControleBase="suivantPlan1" choixModeDeplacement="DepBalayageIncrement">
+            <DepBalayageIncrement choixSautLigne="crenau" applyOffsetHysteresis="false" choixTypeSynchronisation="DepSynchrone" offsetHysteresis="0.0" choixTrajectoireIncBal="NonInverse">
+              <DepSynchrone nbPasIncremental="0" pasBalayage="0.0" nbPasBalayage="0" pasIncremental="0.0">
+                <DepChoixBalayageEnTransOuRot choixBalayeRotOuTranslat="suiviTranslationX">
+                  <DepTexteSelonConfig texte="no text"/>
+                </DepChoixBalayageEnTransOuRot>
+                <DepChoixIncrementEnTransOuRot choixIncremRotOuTranslat="suiviTranslationX">
+                  <DepTexteSelonConfig texte="no text"/>
+                </DepChoixIncrementEnTransOuRot>
+              </DepSynchrone>
+            </DepBalayageIncrement>
+          </DeplacementConfigurationBase>
+        </DepConfPlane>
+      </DeplacementSuivConfiguration>
+    </Deplacement>
+    <ConfigurationMecanique TypeConfigurationMecanique="aucuneConfig">
+      <AucuneConfig/>
+    </ConfigurationMecanique>
+  </ModeleControle>
+  <ModeleReglage version="2" state="valid" bijectionEmiRec="true" isNotComputed="false" withSpecificMaterial="false" useDeadElementsForLawsComputing="true" ChoixCalcul2D3D="calcul3D">
+    <Initialisation choixFonction="FMA"/>
+    <Etat choixBalayage="BalayageElectronique">
+      <BalayageElectronique typeBalayageElectronique="balayageQuelconque">
+        <BalayageQuelconque>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="0" listNumLois="0;" listVoiesEmission="1;"/>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="1" listNumLois="0;" listVoiesEmission="2;"/>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="2" listNumLois="0;" listVoiesEmission="3;"/>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="3" listNumLois="0;" listVoiesEmission="4;"/>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="4" listNumLois="0;" listVoiesEmission="5;"/>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="5" listNumLois="0;" listVoiesEmission="6;"/>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="6" listNumLois="0;" listVoiesEmission="7;"/>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="7" listNumLois="0;" listVoiesEmission="8;"/>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="8" listNumLois="0;" listVoiesEmission="9;"/>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="9" listNumLois="0;" listVoiesEmission="10;"/>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="10" listNumLois="0;" listVoiesEmission="11;"/>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="11" listNumLois="0;" listVoiesEmission="12;"/>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="12" listNumLois="0;" listVoiesEmission="13;"/>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="13" listNumLois="0;" listVoiesEmission="14;"/>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="14" listNumLois="0;" listVoiesEmission="15;"/>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="15" listNumLois="0;" listVoiesEmission="16;"/>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="16" listNumLois="0;" listVoiesEmission="17;"/>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="17" listNumLois="0;" listVoiesEmission="18;"/>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="18" listNumLois="0;" listVoiesEmission="19;"/>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="19" listNumLois="0;" listVoiesEmission="20;"/>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="20" listNumLois="0;" listVoiesEmission="21;"/>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="21" listNumLois="0;" listVoiesEmission="22;"/>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="22" listNumLois="0;" listVoiesEmission="23;"/>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="23" listNumLois="0;" listVoiesEmission="24;"/>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="24" listNumLois="0;" listVoiesEmission="25;"/>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="25" listNumLois="0;" listVoiesEmission="26;"/>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="26" listNumLois="0;" listVoiesEmission="27;"/>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="27" listNumLois="0;" listVoiesEmission="28;"/>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="28" listNumLois="0;" listVoiesEmission="29;"/>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="29" listNumLois="0;" listVoiesEmission="30;"/>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="30" listNumLois="0;" listVoiesEmission="31;"/>
+          <Sequence listVoiesReception="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;" numId="31" listNumLois="0;" listVoiesEmission="32;"/>
+          <AstTrajectoireUS typeFonction="noChoice"/>
+        </BalayageQuelconque>
+      </BalayageElectronique>
+    </Etat>
+    <Comportement typeLoiAmplitude="uniforme" TypeCalcul="direct" isCalculDynamique="false" typeFocalisation="pasDeFocalisation" conversion="false" rebond="false" isOndeT="false">
+      <PasDeFocalisation/>
+    </Comportement>
+    <Reception typeLoiAmplitude="uniforme" TypeCalcul="direct" isCalculDynamique="false" typeFocalisation="pasDeFocalisation" conversion="false" rebond="false" isOndeT="false" idemEmission="true">
+      <PasDeFocalisation/>
+    </Reception>
+    <LoisAmplitude>
+      <BlocRafalesAmplitudes>
+        <RafaleAmplitudes tabNumSequence="0;" numId="0"/>
+      </BlocRafalesAmplitudes>
+      <BlocSequencesAmplitudes>
+        <SequenceAmplitudes listNumLois="0;" numId="0"/>
+      </BlocSequencesAmplitudes>
+      <BlocLoisAmplitudes>
+        <LoiAmplitudes numId="0"/>
+      </BlocLoisAmplitudes>
+    </LoisAmplitude>
+  </ModeleReglage>
+  <OptionsCalculMephisto version="4">
+    <ChampEmis>
+      <ChampEmisRecu typeChamp="Volee">
+        <ChampSonVolee attenuation="false" approximation="true" strategieCalcul="rebondChampson" directionLocale="true" AffichageAvance="false" typeCalcul="calcul3d" precision="1.0" choixExtraction="TempsVol"/>
+      </ChampEmisRecu>
+    </ChampEmis>
+    <ChampRecu natureChamp="Identique" typeChamp="Identique">
+      <ChampEmisRecu typeChamp="Volee">
+        <ChampSonVolee attenuation="false" approximation="true" strategieCalcul="image" directionLocale="false" AffichageAvance="false" typeCalcul="calcul3d" precision="1.0" choixExtraction="Amplitude"/>
+      </ChampEmisRecu>
+    </ChampRecu>
+    <OptionsMephisto nbModesARestituer="5" saveResponseConv="true" activerIdentificationModes="false" typeParametrage="GatesAndSkips" saveResponseImpul="false">
+      <ModesCalcules TypeCalculEchoFond3D="calculAprroche" ombrageEntreDefauts="true" typeCalcul="calcul3d" ondeT="false" ondeL="true" debugString="" echosGeometrie="false" controle="bondComplet" ondeRasante="false" ondeLateraleEntree="false" echosEntree="false" conversionMode="false" version="0" precision="1.0" attenuation="true"/>
+      <ListeModes estimerModes="false" version="2" isAutomaticallyComputed="true" binaryFile="binaryFile" typeAffichage="false" nbModesMaxUser="1" voirModeCalculer="true" nbModesMax="1">
+        <ModesDeCalcul typeContrainteRebond="Maximum" nbAllerRetoursL0="2" activerRebond="false" ondeT="false" rebondInterne="false" ondeP="false" ondeL="true" rebondDefauts="true" ondeRagleigh="false" enveloppePiece="true" typageZones="false" nombreRebondsPiece="0" controle="bondComplet" specimen="analytic" echoCoinSpeculaire="EchoSpeculaire" nbTransmissionConversion="0" isListeModesOpened="true" conversionMode="false" rebondEntree="true" activerConverInterne="false" rebondFond="true"/>
+      </ListeModes>
+      <ParamGates>
+        <Gate threshold="0.0" typeSynchroDetection="EchoMaxAbsolu" colorR="35" colorG="205" auto="false" name="Gate 1" colorB="205" start_us="0.0" typeGate="simulation" thresholdUnit="percent" typeStockage="VoiesElem" id="1" end_us="20.47" width_us="20.47" endSynchroGateId="-1" version="0" deltatime="0.0" isOnlyInstructive="false" startSynchroGateId="-1"/>
+      </ParamGates>
+    </OptionsMephisto>
+    <ModeleInteractionMephisto typeInteractionsGeometriques="Detaillees" nbRebondsDefautsPiece="2" activerRebondsDefautsPiece="false" typeRebondsDefautsPiece="Entree">
+      <TInfoModele>
+        <TInteraction choixInteraction="YingTruell" OccDefaut="1" interDefautActive="true"/>
+      </TInfoModele>
+      <InterGeomDetaillee typeGeometrie="surface" typeInteraction="Echo" modeleInteraction="speculaire" interGeomActive="true"/>
+      <InterGeomDetaillee typeGeometrie="fond" typeInteraction="Echo" modeleInteraction="speculaire" interGeomActive="true"/>
+      <InterGeomDetaillee typeGeometrie="interface" typeInteraction="RebondEtEcho" modeleInteraction="speculaire" interGeomActive="false"/>
+      <InterGeomDetaillee typeGeometrie="cote" typeInteraction="RebondEtEcho" modeleInteraction="speculaire" interGeomActive="false"/>
+    </ModeleInteractionMephisto>
+    <Acquisition stockageVoiesElementaires="false" listeUnites="MicroSec" frequenceEchantillonnage="100.0" appliquerDAC="false" profondeurNumerisationInt="-1" typeCalcul="Automatique" profondeurNumerisationFloat="0.0" tempsMin="0.0">
+      <TDSDac uniteCoef="dB" type="name type"/>
+    </Acquisition>
+    <EtalonnageUS etalonnageCoherant="false" typeEtalonnageUS="Sans" valeurEtalonnage="0.0" isComputing="false" isComputed="false" isSelectionAmplitudeUsed="false" typeLimits="IBST" etalonnageOndeT="false" selectionAmplitude="0.0" etalonnageOndeL="true">
+      <PieceEtalonUS typePieceEtalonUS="Plane" rayon_mm="1.0" isPerpAxeRevol="false" isControleExt="false" controle="Interne" axeRevol="Parallele" materiauCourant="true">
+        <Material comment="Comment" referenceFileName="File Name" state="Solid" typeMaterialEM="Simple" typeMaterialED="Simple" typeMaterialXR="Simple" name="Name">
+          <SimpleMaterial density_gcm3="1.0">
+            <SimpleParamEM permeability="1.0" conductivity_MSm="0.0"/>
+            <SimpleParamED AttenuationMode="OndeL" attenuationRange="none" version="v1" SymetrieType="IsotropicED">
+              <Bruit listChoixBruit="WithoutBruit"/>
+              <AttenuationLawED AttenuationLawType="WithoutAttenuation"/>
+              <AttenuationLawED AttenuationLawType="WithoutAttenuation"/>
+              <AttenuationLawED AttenuationLawType="WithoutAttenuation"/>
+              <SimpleIsotropicED TWaveVelocity_ms="3000.0" LWaveVelocity_ms="6000.0"/>
+            </SimpleParamED>
+            <SimpleParamXR energieHighCutElectrons_keV="0.0" fileCoeffDiffuseCNDRI="pas de fichier" atomicNumber="0" energieHighCutPhotons_keV="0.0" masseAtomic="0.0" energieLowCutElectrons_keV="0.0" fileCoeffMonteCarloLETI="pas de fichier" energieLowCutPhotons_keV="0.0">
+              <EnergyParam energyRayAbsorption_keV="0.0"/>
+              <EnergyChannelCoefficient energyRayAbsorption_keV="0.0" coeffAttenuationTotal="0.0" coeffCompton="0.0" coeffAbsorptionEnergy="0.0" coeffPhotoElectrique="0.0" coeffPaire="0.0" coeffDifusionRayleigh="0.0"/>
+            </SimpleParamXR>
+          </SimpleMaterial>
+          <ComplexMaterial aggregatesFileName="" homogenized="false" homogeneisationVersion="0" typeComplexMaterial="Alliage" aggregatesGenerated="false">
+            <Alliage density_gcm3="1.0" natureAlliage="Compose">
+              <ParamAlliageEM/>
+              <ParamAlliageED/>
+              <ParamAlliageXR typeCoefficiant="ProportionMassique"/>
+            </Alliage>
+          </ComplexMaterial>
+          <Vacuum/>
+        </Material>
+      </PieceEtalonUS>
+      <DefautEtalonUS diametre_mm="1.0" typeDefautEtalonUS="Generatrice" profondeur_mm="1.0"/>
+      <TypeConfigEtalonUS typePosEtalonUS="TraducteurCourant">
+        <ConfImEtalonUS angleIncidence="1.0" couplantCourant="true" hauteurCouplant_mm="1.0">
+          <Material comment="Comment" referenceFileName="File Name" state="Liquid" typeMaterialEM="Simple" typeMaterialED="Simple" typeMaterialXR="Simple" name="Name">
+            <SimpleMaterial density_gcm3="1.0">
+              <SimpleParamEM permeability="1.0" conductivity_MSm="0.0"/>
+              <SimpleParamED AttenuationMode="OndeL" attenuationRange="none" version="v1" SymetrieType="IsotropicED">
+                <Bruit listChoixBruit="WithoutBruit"/>
+                <AttenuationLawED AttenuationLawType="WithoutAttenuation"/>
+                <AttenuationLawED AttenuationLawType="WithoutAttenuation"/>
+                <AttenuationLawED AttenuationLawType="WithoutAttenuation"/>
+                <SimpleIsotropicED TWaveVelocity_ms="3000.0" LWaveVelocity_ms="6000.0"/>
+              </SimpleParamED>
+              <SimpleParamXR energieHighCutElectrons_keV="0.0" fileCoeffDiffuseCNDRI="pas de fichier" atomicNumber="0" energieHighCutPhotons_keV="0.0" masseAtomic="0.0" energieLowCutElectrons_keV="0.0" fileCoeffMonteCarloLETI="pas de fichier" energieLowCutPhotons_keV="0.0">
+                <EnergyParam energyRayAbsorption_keV="0.0"/>
+                <EnergyChannelCoefficient energyRayAbsorption_keV="0.0" coeffAttenuationTotal="0.0" coeffCompton="0.0" coeffAbsorptionEnergy="0.0" coeffPhotoElectrique="0.0" coeffPaire="0.0" coeffDifusionRayleigh="0.0"/>
+              </SimpleParamXR>
+            </SimpleMaterial>
+            <ComplexMaterial aggregatesFileName="" homogenized="false" homogeneisationVersion="0" typeComplexMaterial="Alliage" aggregatesGenerated="false">
+              <Alliage density_gcm3="1.0" natureAlliage="Compose">
+                <ParamAlliageEM/>
+                <ParamAlliageED/>
+                <ParamAlliageXR typeCoefficiant="ProportionMassique"/>
+              </Alliage>
+            </ComplexMaterial>
+            <Vacuum/>
+          </Material>
+        </ConfImEtalonUS>
+      </TypeConfigEtalonUS>
+    </EtalonnageUS>
+  </OptionsCalculMephisto>
+  <ListeDefauts>
+    <Defaut nom="Side drilled Hole" numId="1" numIdParType="1" useMaterial="false">
+      <Positioning angle3="0.0" abscisse="0.0" angle2="0.0" angle1="0.0" modePositionnement="pointDeReference" positionnement="suivantY" offset="19.5" nombrePointImpact="2" version="V4" typeCylindreReference="principal" theta="0.0" z="0.0" y="0.0" angleOblique="0.0" x="0.0" choixPointImpact="2" r="0.0" distance="0.0" mechanicalLink="piece" directionTranslation="suivantVerticale" repere="piece" planDisjoints="false" coordonnees="cartesiennes" alpha="0.0" profondeur="0.0" positionControle="exterieur" position="quelconque" directionProfondeur="normalAplomb" typage="plan">
+        <PointCoord typeCoord="plan">
+          <CoordPlanes z="33.00032043457031" y="50.0" x="205.0"/>
+        </PointCoord>
+        <PointCoord typeCoord="plan">
+          <CoordPlanes z="40.0" y="12.0" x="40.0"/>
+        </PointCoord>
+        <PointCoord typeCoord="plan">
+          <CoordPlanes z="60.0" y="12.0" x="40.0"/>
+        </PointCoord>
+        <Rotation angle3="0.0" angle2="0.0" angle1="0.0" choixRepere="absolu" orientationInitiale="quelconque" initialOrientation="radial"/>
+        <Rotation angle3="0.0" angle2="0.0" angle1="0.0" choixRepere="absolu" orientationInitiale="quelconque" initialOrientation="radial"/>
+        <Rotation angle3="180.0" angle2="180.0" angle1="0.0" choixRepere="absolu" orientationInitiale="quelconque" initialOrientation="radial"/>
+      </Positioning>
+      <Piece typeGeom="TrouGeneratrice" typeStructure="homogene" version="V3" symetrieMiroir="false" infinite="false" angleZ="0.0" angleY="0.0" angleX="-0.0" origineZ="0.0" origineY="0.0" origineX="0.0" interieurExterieur="interieur" nom="Piece">
+        <TrouGeneratrice diametre="1.0" longueur="24.0"/>
+        <Volume isWithBruit="false" id="Couche" typeisoani="isotrope" epaisseur="100.0">
+          <Material comment="Comment" referenceFileName="File Name" state="Vacuum" typeMaterialEM="Simple" typeMaterialED="Simple" typeMaterialXR="Simple" name="Vacuum">
+            <SimpleMaterial density_gcm3="0.0">
+              <SimpleParamEM permeability="1.0" conductivity_MSm="0.0"/>
+              <SimpleParamED AttenuationMode="OndeL" attenuationRange="none" version="v1" SymetrieType="IsotropicED">
+                <Bruit listChoixBruit="WithoutBruit"/>
+                <AttenuationLawED AttenuationLawType="WithoutAttenuation"/>
+                <AttenuationLawED AttenuationLawType="WithoutAttenuation"/>
+                <AttenuationLawED AttenuationLawType="WithoutAttenuation"/>
+                <SimpleIsotropicED TWaveVelocity_ms="0.0" LWaveVelocity_ms="0.0"/>
+              </SimpleParamED>
+              <SimpleParamXR energieHighCutElectrons_keV="0.0" fileCoeffDiffuseCNDRI="pas de fichier" atomicNumber="0" energieHighCutPhotons_keV="0.0" masseAtomic="0.0" energieLowCutElectrons_keV="0.0" fileCoeffMonteCarloLETI="pas de fichier" energieLowCutPhotons_keV="0.0">
+                <EnergyParam energyRayAbsorption_keV="0.0"/>
+                <EnergyChannelCoefficient energyRayAbsorption_keV="0.0" coeffAttenuationTotal="0.0" coeffCompton="0.0" coeffAbsorptionEnergy="0.0" coeffPhotoElectrique="0.0" coeffPaire="0.0" coeffDifusionRayleigh="0.0"/>
+              </SimpleParamXR>
+            </SimpleMaterial>
+            <Vacuum/>
+          </Material>
+          <Orientation skew="0.0" theta="0.0" rotation="0.0"/>
+        </Volume>
+        <Maillage typeMaillage="AucunMaillage">
+          <AucunMaillage/>
+        </Maillage>
+        <Rugosite>
+          <RugositeGlobale ra_mm="0.0"/>
+        </Rugosite>
+      </Piece>
+    </Defaut>
+  </ListeDefauts>
+  <VersionDate date="[Mar 09 2018]" buildDate="1520563873" version="Civa_2017 [SP2] "/>
+</ChampSons>

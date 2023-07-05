@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE Ftp PUBLIC "-//fr.cea//DTD ftp.resources.dtd.Ftp//FR" "Ftp.dtd" >
+<Ftp typeExcitation="FMC">
+  <OptionsFtpSimulation deltaT="0.0">
+    <ZonePanel TypeZone="plan" CritereMaillage="stepNumber" ModeParametrage="Avance">
+      <Positioning angle3="0.0" abscisse="0.0" angle2="0.0" angle1="0.0" modePositionnement="pointDeReference" positionnement="quelconque" offset="0.0" nombrePointImpact="3" version="V4" typeCylindreReference="principal" theta="0.0" z="30.0" y="0.0" angleOblique="0.0" x="0.0" choixPointImpact="1" r="0.0" distance="0.0" mechanicalLink="piece" directionTranslation="suivantNormale" repere="piece" planDisjoints="false" coordonnees="cartesiennes" alpha="0.0" profondeur="30.0" positionControle="interieur" position="suivantAxeT" directionProfondeur="normalLocal" typage="plan">
+        <PointCoord typeCoord="plan">
+          <CoordPlanes z="40.0" y="12.0" x="40.0"/>
+        </PointCoord>
+        <PointCoord typeCoord="plan">
+          <CoordPlanes z="0.0" y="0.0" x="0.0"/>
+        </PointCoord>
+        <PointCoord typeCoord="plan">
+          <CoordPlanes z="0.0" y="0.0" x="0.0"/>
+        </PointCoord>
+        <Rotation angle3="90.0" angle2="0.0" angle1="0.0" choixRepere="absolu" orientationInitiale="quelconque" initialOrientation="radial"/>
+        <Rotation angle3="0.0" angle2="0.0" angle1="0.0" choixRepere="absolu" orientationInitiale="quelconque" initialOrientation="radial"/>
+        <Rotation angle3="0.0" angle2="0.0" angle1="0.0" choixRepere="absolu" orientationInitiale="quelconque" initialOrientation="radial"/>
+      </Positioning>
+      <Zone2D pasHauteur="0.1" nbrePasLongueur="200" hauteur="20.0" longueur="20.0" pasLongueur="0.1" nbrePasHauteur="200"/>
+    </ZonePanel>
+  </OptionsFtpSimulation>
+  <OptionsFtpReconstruction interpolationTDV="true" isModesDirects="true" ponderationAmplitudeChamp="false" indirectRetour="L" filtreConeDiffraction="false" filtreReconstruction="false" typeCombinaisonModes="Max" isModesCoin="false" typeCalculTDV="3D" coinRetour="L" indirectBondAller="L" coinRebond="L" fullReconstructionForElectronicDimension="false" TDVParCalculChamp="false" directRetour="L" isVoieElementaire="true" typeCoinRebond="XXdX" algorithm="Civa" angleConeDiffraction="120.0" optionTH="false" modesCombinesUniquement="false" coinAller="L" TDVDynamiques="false" indirectAller="L" indirectBondRetour="L" directAller="L" isModesIndirects="false">
+    <Filters useERCombinationsFilter="false" useMeanSubtraction="false" useSlidingWindowFilter="false" useArtifactsFilter="false" useDiffractionConeFilter="false"/>
+    <Mode combinaison="false" retour="L" typeCoinRebond="XXdX" bondAller="L" aller="L" bondRetour="L" typeMode="Direct"/>
+  </OptionsFtpReconstruction>
+  <LocalFile fileName=""/>
+</Ftp>

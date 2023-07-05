@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE ModeleLayout PUBLIC "-//fr.cea//DTD modelelayout.resources.dtd.ModeleLayout//FR" "ModeleLayout.dtd" >
+<ModeleLayout author="">
+  <Source id="S_0" type="IBST_be0_trF_vsF_veT_msF"/>
+  <PageDescriptor>
+    <PageLayout filenamelayout="user_0.layout" ctxtPage="IBST_be0_trF_vsF_veT_msF" isFooterPanelVisible="true" layoutKey="default" typePage="TYPE_ANALYSE" idWindow="ID_PAGE_ANALYSE3" proportions="0.824;">
+      <FrameDescriptor componentKey="BalElecTpsScanAllF" sourceKey="S_0" idWindowLinked="" idWindow="win_0" scaleY="1.0" shearY="0.0" scaleX="1.0" shearX="0.0" translateY="0.0" translateX="0.0"/>
+      <FrameDescriptor componentKey="BVoiesScan" sourceKey="S_0" idWindowLinked="" idWindow="win_1" scaleY="1.0" shearY="0.0" scaleX="1.0" shearX="0.0" translateY="0.0" translateX="0.0"/>
+      <FrameDescriptor componentKey="AVoiesScan" sourceKey="S_0" idWindowLinked="" idWindow="win_2" scaleY="1.0" shearY="0.0" scaleX="1.0" shearX="0.0" translateY="0.0" translateX="0.0"/>
+      <FrameDescriptor componentKey="View3D" sourceKey="S_0" idWindowLinked="" idWindow="win_3" scaleY="1.0" shearY="0.0" scaleX="1.0" shearX="0.0" translateY="0.0" translateX="0.0"/>
+    </PageLayout>
+  </PageDescriptor>
+</ModeleLayout>

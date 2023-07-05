@@ -1,0 +1,78 @@
+# -*- mode: python -*-
+
+block_cipher = None
+
+venv_path = 'C:/Users/Vitor/PycharmProjects/AUSPEX/venvpython3'
+project_path = 'C:/Users/Vitor/PycharmProjects/AUSPEX'
+
+mkl = [(venv_path + '/lib/libiomp5.so','.'),
+(venv_path + '/lib/libmkl_mc.so','.'),
+(venv_path + '/lib/libmkl_rt.so','.'),
+(venv_path + '/lib/libmkl_avx.so','.'),
+(venv_path + '/lib/libmkl_def.so','.'),
+(venv_path + '/lib/libmkl_mc3.so','.'),
+(venv_path + '/lib/libmkl_avx2.so','.'),
+(venv_path + '/lib/libmkl_core.so','.'),
+(venv_path + '/lib/libmkl_avx512.so','.'),
+(venv_path + '/lib/libmkl_vml_mc.so','.'),
+(venv_path + '/lib/libmkl_gf_lp64.so','.'),
+(venv_path + '/lib/libmkl_vml_avx.so','.'),
+(venv_path + '/lib/libmkl_vml_def.so','.'),
+(venv_path + '/lib/libmkl_vml_mc2.so','.'),
+(venv_path + '/lib/libmkl_vml_mc3.so','.'),
+(venv_path + '/lib/libmkl_gf_ilp64.so','.'),
+(venv_path + '/lib/libmkl_vml_avx2.so','.'),
+(venv_path + '/lib/libmkl_vml_cmpt.so','.'),
+(venv_path + '/lib/libmkl_cdft_core.so','.'),
+(venv_path + '/lib/libmkl_avx512_mic.so','.'),
+(venv_path + '/lib/libmkl_gnu_thread.so','.'),
+(venv_path + '/lib/libmkl_intel_lp64.so','.'),
+(venv_path + '/lib/libmkl_pgi_thread.so','.'),
+(venv_path + '/lib/libmkl_sequential.so','.'),
+(venv_path + '/lib/libmkl_tbb_thread.so','.'),
+(venv_path + '/lib/libmkl_vml_avx512.so','.'),
+(venv_path + '/lib/libmkl_intel_ilp64.so','.'),
+(venv_path + '/lib/libmkl_intel_thread.so','.'),
+(venv_path + '/lib/libmkl_scalapack_lp64.so','.'),
+(venv_path + '/lib/libmkl_vml_avx512_mic.so','.'),
+(venv_path + '/lib/libmkl_scalapack_ilp64.so','.'),
+(venv_path + '/lib/libmkl_blacs_sgimpt_lp64.so','.'),
+(venv_path + '/lib/libmkl_blacs_openmpi_lp64.so','.'),
+(venv_path + '/lib/libmkl_blacs_sgimpt_ilp64.so','.'),
+(venv_path + '/lib/libmkl_blacs_intelmpi_lp64.so','.'),
+(venv_path + '/lib/libmkl_blacs_openmpi_ilp64.so','.'),
+(venv_path + '/lib/libmkl_blacs_intelmpi_ilp64.so','.')]
+
+a = Analysis(['gui_run.py'],
+             pathex=[project_path + '/',
+			 project_path + '/imaging',
+			 project_path + '/framework',
+			 project_path + '/surface'],
+             binaries=mkl,
+             datas=[(project_path + '/imaging/*.py','imaging'), (project_path + '/framework/pre_proc.py', 'framework'), (project_path + '/parameter_estimation/cl_estimators.py', 'parameter_estimation'), (project_path + '/docs/_build/html', 'docs/_build/html')],
+             hiddenimports=['pywt._extensions._cwt', 'scipy.odr', 'surface.surface', 'framework.fk_mig', 'framework.linterp_oper', 'data_types', 'cv2', 'skimage', 'sklearn', 'polarTransform', 'ipykernel.datapub'],
+             hookspath=[project_path + '/hooks'],
+             runtime_hooks=[],
+             excludes=['imaging', 'framework.pre_proc', 'parameter_estimation.cl_estimators'],
+             win_no_prefer_redirects=False,
+             win_private_assemblies=False,
+             cipher=block_cipher,
+             noarchive=False)
+pyz = PYZ(a.pure, a.zipped_data,
+             cipher=block_cipher)
+exe = EXE(pyz,
+          a.scripts,
+          a.binaries,
+          a.zipfiles,
+          a.datas,
+          [],
+          name='Toolbox',
+          debug=False,
+          bootloader_ignore_signals=False,
+          strip=False,
+          upx=True,
+          runtime_tmpdir=None,
+		  one_file=True,
+          console=True )
+
+		  
