@@ -10,7 +10,7 @@ from matplotlib.animation import FFMpegWriter
 
     for i in range(n_shots):
         data = file_m2k.read(path + file[j], freq_transd=5, bw_transd=0.5, tp_transd='gaussian', sel_shots=i)
-       ## TODO: TFM
+       ##  TFM
 	img = tfm....
         np.save(f'img{name}.npy', img)
         name += 1
